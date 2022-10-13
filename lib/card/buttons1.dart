@@ -22,7 +22,7 @@ class Button1 extends StatelessWidget {
                 )
               ]),
           child: Center(
-            child: Image.asset('assets/coins.png'),
+            child: Image.asset('assets/cash.png'),
           ),
         ),
         const SizedBox(height: 10),

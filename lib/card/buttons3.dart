@@ -11,7 +11,7 @@ class Buttons3 extends StatelessWidget {
           height: 50,
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
-              color: Colors.white60,
+              color: Colors.white,
               borderRadius: BorderRadius.circular(12),
               boxShadow: const [
                 // ignore: prefer_const_constructors

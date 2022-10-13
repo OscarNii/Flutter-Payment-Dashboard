@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         child: Padding(
-          padding: const EdgeInsets.only(top: 25.0),
+          padding: const EdgeInsets.only(top: 16.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -43,40 +43,42 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {},
                 icon: Icon(
                   Icons.home_outlined,
-                  size: 30,
+                  size: 25,
+                  color: Colors.white,
                 ),
               ),
               IconButton(
                 onPressed: () {},
                 icon: Icon(
                   Icons.search,
-                  size: 30,
+                  size: 25,
+                  color: Colors.white,
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
-                  Icons.person_pin,
-                  size: 30,
-                ),
+                icon: Icon(Icons.person_pin, size: 30, color: Colors.white),
               ),
               IconButton(
                 onPressed: () {},
                 icon: Icon(
                   Icons.forward_to_inbox_sharp,
-                  size: 30,
+                  size: 25,
+                  color: Colors.white,
                 ),
               ),
               IconButton(
                 onPressed: () {},
                 icon: Icon(
                   Icons.settings_outlined,
-                  size: 30,
+                  size: 25,
+                  color: Colors.white,
                 ),
               ),
             ],
           ),
         ),
+        color: Colors.black,
       ),
       body: SafeArea(
         child: Column(

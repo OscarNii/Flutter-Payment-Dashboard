@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {},
         backgroundColor: Colors.black,
         child: Icon(
-          Icons.monetization_on,
+          Icons.account_balance_wallet,
           size: 40,
           color: Colors.white,
         ),

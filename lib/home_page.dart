@@ -6,6 +6,8 @@ import 'package:wallet/card/buttons.dart';
 import 'package:wallet/card/buttons1.dart';
 import 'package:wallet/card/buttons2.dart';
 import 'package:wallet/card/buttons3.dart';
+import 'package:wallet/card/list1.dart';
+import 'package:wallet/card/list2.dart';
 import 'package:wallet/card/wallet_card1.dart';
 import 'package:wallet/card/wallet_card2.dart';
 import 'package:wallet/card/wallet_cards.dart';
@@ -149,127 +151,13 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 2),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 29.0),
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            height: 90,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(13),
-                            ),
-                            child: Image.asset('assets/donation.png'),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'History On Payment',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 17,
-                                ),
-                              ),
-                              SizedBox(height: 10),
-                              Text('Payments and Income'),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Icon(Icons.arrow_forward_ios),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            height: 90,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(13),
-                            ),
-                            child: Image.asset('assets/paypal.png'),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'My PayPal',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 17,
-                                ),
-                              ),
-                              SizedBox(height: 10),
-                              Text('Payments and Withdraw'),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.blue,
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            height: 90,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(13),
-                            ),
-                            child: Image.asset('assets/exchange.png'),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Transactions',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 17,
-                                ),
-                              ),
-                              SizedBox(height: 10),
-                              Text('Payments and Income'),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.red,
-                      ),
-                    ],
-                  ),
+                  List1(),
+                  List2(),
                 ],
               ),
             ),
